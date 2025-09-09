@@ -1,0 +1,42 @@
+const mongoose = require('mongoose');
+
+// This sub-schema defines the structure for a single field in a content type.
+const fieldSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+        trim: true,
+    },
+    type: {
+        type: String,
+        required: true,
+        enum: ['String', 'RichText', 'Number', 'Boolean', 'Date', 'Media', 'Reference'],
+    },
+    // For Reference type, this will store the referenced contentType's ID
+    ref: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'ContentType'
+    }
+}, { _id: false }); // _id is not needed for sub-documents in this case
+
+const contentTypeSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+        unique: true,
+        trim: true,
+    },
+    // The apiIdentifier is a URL-friendly version of the name.
+    apiIdentifier: {
+        type: String,
+        required: true,
+        unique: true,
+        trim: true,
+        lowercase: true,
+    },
+    fields: [fieldSchema], // An array of fields as defined above
+}, { timestamps: true });
+
+const ContentType = mongoose.model('ContentType', contentTypeSchema);
+
+module.exports = ContentType;

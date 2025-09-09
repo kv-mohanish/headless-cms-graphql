@@ -1,0 +1,38 @@
+{
+  "name": "headless-cms-graphql",
+  "version": "1.0.0",
+  "description": "A Headless CMS with a GraphQL API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "headless",
+    "cms",
+    "graphql",
+    "nodejs",
+    "express",
+    "mongodb",
+    "cloudinary"
+  ],
+  "author": "AI Assistant",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "graphql": "^16.8.1",
+    "graphql-tag": "^2.12.6",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.0",
+    "multer": "^1.4.5-lts.1",
+    "streamifier": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
