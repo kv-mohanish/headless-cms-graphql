@@ -1,55 +1,55 @@
-````markdown
-# 📝 Headless CMS with GraphQL API  
+# 📝 Headless CMS with GraphQL API
 
-A **powerful, backend-only Headless Content Management System (CMS)** built with **Node.js**, **Express**, and **Apollo Server**.  
+A **powerful, backend-only Headless Content Management System (CMS)** built with **Node.js**, **Express**, and **Apollo Server**.
 This project provides a **flexible, efficient GraphQL API** that can deliver content to **any front-end client** — websites, mobile apps, or even IoT devices.
 
 ---
 
-## 🚀 Features  
+## 🚀 Features
 
-✅ **GraphQL API** – Query, create, update, and delete content with precision. Avoid over-fetching/under-fetching issues common with REST APIs.  
+✅ **GraphQL API** – Query, create, update, and delete content with precision. Avoid over-fetching/under-fetching issues common with REST APIs.
 
-✅ **Dynamic Content Modeling** – Define and customize content types (e.g., BlogPost with title, body, author) directly via the API.  
+✅ **Dynamic Content Modeling** – Define and customize content types (e.g., BlogPost with title, body, author) directly via the API.
 
-✅ **User Roles & Permissions** – Built-in authentication and authorization (Admin, Editor, Viewer). Protect content integrity and enforce access control.  
+✅ **User Roles & Permissions** – Built-in authentication and authorization (Admin, Editor, Viewer). Protect content integrity and enforce access control.
 
-✅ **Media Uploads** – Seamless media management powered by **Cloudinary** for scalable and reliable image/file storage.  
+✅ **Media Uploads** – Seamless media management powered by **Cloudinary** for scalable and reliable image/file storage.
 
-✅ **Extensible & Scalable** – Modular architecture allows easy addition of new features, integrations, and services.  
+✅ **Extensible & Scalable** – Modular architecture allows easy addition of new features, integrations, and services.
 
 ---
 
-## 💻 Tech Stack  
+## 💻 Tech Stack
 
-| Layer              | Technology           |
-|--------------------|--------------------|
-| **Backend**        | Node.js, Express.js |
+| Layer              | Technology              |
+| ------------------ | ----------------------- |
+| **Backend**        | Node.js, Express.js     |
 | **API**            | Apollo Server (GraphQL) |
-| **Database**       | MongoDB + Mongoose |
-| **Authentication** | JWT (JSON Web Tokens) |
-| **Media Storage**  | Cloudinary API |
-| **Development**    | Nodemon (live reload) |
+| **Database**       | MongoDB + Mongoose      |
+| **Authentication** | JWT (JSON Web Tokens)   |
+| **Media Storage**  | Cloudinary API          |
+| **Development**    | Nodemon (live reload)   |
 
 ---
 
-## 📦 Prerequisites  
+## 📦 Prerequisites
 
-Before starting, make sure you have:  
+Before starting, make sure you have:
 
-- **Node.js** v14+  
-- **MongoDB Atlas** account (or local MongoDB instance)  
-- **Cloudinary account** for media uploads  
+* **Node.js** v14+
+* **MongoDB Atlas** account (or local MongoDB instance)
+* **Cloudinary account** for media uploads
 
 ---
 
-## ⚙️ Installation & Setup  
+## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository  
+### 1️⃣ Clone the Repository
+
 ```bash
 git clone <your-repository-url>
 cd headless-cms-graphql
-````
+```
 
 ### 2️⃣ Install Dependencies
 
@@ -164,21 +164,13 @@ query {
 
 Contributions are welcome!
 
-* Fork the repo
-* Create a feature branch (`git checkout -b feature-name`)
-* Commit changes (`git commit -m "Added new feature"`)
-* Push to branch and create a PR
+1. Fork the repo
+2. Create a feature branch (`git checkout -b feature-name`)
+3. Commit changes (`git commit -m "Added new feature"`)
+4. Push to branch and create a PR
 
 ---
 
 ## 🛡️ License
 
 This project is licensed under the **MIT License** – feel free to use and modify it for your own purposes.
-
-```
-
----
-
-Would you like me to add **badges** (Node.js, Express, GraphQL, MongoDB, MIT License) at the top to make it look professional like open-source projects on GitHub? (It’ll look really good!)
-```
-
